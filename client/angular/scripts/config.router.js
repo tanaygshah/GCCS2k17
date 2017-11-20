@@ -144,6 +144,14 @@
                 resolve: load( ['summernote', 'ui.select'] )
             })
 
+            // attack view router
+            .state('app.attack.view', {
+              url: '/attack-view',
+              templateUrl: '../views/ui/attack-view.html',
+              data : { title: 'Attack-View' },
+              controller: 'AttackCtrl'
+            })
+
             // widget router
             .state('app.widget', {
               url: '/widget',
